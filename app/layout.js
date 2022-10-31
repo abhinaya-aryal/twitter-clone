@@ -1,4 +1,4 @@
-import Navdata from "../data/navdata";
+import NavData from "../data/navdata";
 import "/styles/globals.css";
 
 const RootLayout = ({ children }) => {
@@ -6,7 +6,7 @@ const RootLayout = ({ children }) => {
     <html>
       <body>
         <div className="flex bg-blue-500 justify-around text-white py-0.6">
-          {Navdata.map((item, index) => {
+          {NavData.map((item, index) => {
             return (
               <h1 className="text-2.4 cursor-pointer" key={index}>
                 {item.name}

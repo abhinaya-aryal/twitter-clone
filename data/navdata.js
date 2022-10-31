@@ -1,4 +1,4 @@
-const Navdata = [
+const NavData = [
   {
     id: 1,
     name: "Home",
@@ -16,4 +16,4 @@ const Navdata = [
   },
 ];
 
-export default Navdata;
+export default NavData;
