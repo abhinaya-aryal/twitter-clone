@@ -1,9 +1,7 @@
+// $ This is the root page file. This file is used for the page rendering. Infact every route should have page.js file in it.
+
 const RootPage = () => {
-  return (
-    <div className="bg-red-500 text-white p-0.8 text-center font-bold m-5.6 text-2.4">
-      Hello, Next.js 13
-    </div>
-  );
+  return <div></div>;
 };
 
 export default RootPage;
