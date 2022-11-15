@@ -1,4 +1,4 @@
-import heebo from "../../lib/fonts/heebo";
+import heebo from "../funcs/heebo";
 
 const TweetButton = () => {
   return (

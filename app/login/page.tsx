@@ -9,7 +9,7 @@ const LogInPage = async () => {
   console.log(users);
   return (
     <>
-      {users.map((user) => {
+      {users.map((user: { id: number; name: string }) => {
         return <div key={user.id}>{user.name}</div>;
       })}
     </>
