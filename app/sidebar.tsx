@@ -1,12 +1,11 @@
 "use client";
 
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import Link from "next/link";
 
-import Logo from "./logo";
 import SideBarData from "../data/sidebardata";
-import heebo from "../funcs/heebo";
+import Logo from "./logo";
 import Profile from "./profile";
 import TweetButton from "./tweetbutton";
 
@@ -17,10 +16,11 @@ const SideBar = () => {
 
   return (
     <>
-      <div className="h-screen w-38.4 float-left border-r border-gray-400</div> flex flex-col items-center">
-        <div className={`h-full justify-between flex flex-col`}>
+      <div className="h-screen w-36 float-left border-r flex items-end flex-col">
+        <div className={`h-full w-max justify-between mr-2 flex flex-col`}>
           <div className={`h-max`}>
             <Logo />
+            {/* relocate the jsx below and call a single component passing props */}
             {SideBarData.map((item) => {
               return (
                 <>
@@ -30,9 +30,9 @@ const SideBar = () => {
                   >
                     <div
                       key={item.name}
-                      className={`${heebo.className} ${
+                      className={`${
                         activePath === item.path ? "font-semibold" : ""
-                      } h-max w-max my-0.4 text-2.8 p-1 rounded-full cursor-pointer hover:bg-[rgb(231,231,232)] flex space-x-2`}
+                      } h-max w-max my-0.2 text-2.8 pl-1 py-1.2 pr-2 rounded-full cursor-pointer hover:bg-[rgb(231,231,232)] flex space-x-2`}
                     >
                       {item.icon}
                       <div className={`text-2`}>{item.name}</div>

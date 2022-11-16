@@ -1,5 +1,6 @@
 import "/styles/globals.css";
 import SideBar from "./sidebar";
+import heebo from "../funcs/heebo";
 
 type Props = {
   children: React.ReactNode;
@@ -8,7 +9,7 @@ type Props = {
 const RootLayout = ({ children }: Props) => {
   return (
     <html lang="en">
-      <body className="text-1.2">
+      <body className={`${heebo.className} text-1.6 `}>
         <SideBar />
         {children}
       </body>
